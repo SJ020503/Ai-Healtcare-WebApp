@@ -1,1 +1,1 @@
-# Ai-Healtcare-WebApp
+# Ai-Healthcare-WebApp
