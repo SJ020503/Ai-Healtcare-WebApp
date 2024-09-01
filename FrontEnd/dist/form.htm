@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Page Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden { display: none; }
+        .show { display: block; }
+    </style>
+</head>
+
+<body class=" text-black">
+    <div class="h-16 mb-6">
+        <nav class="h-24 z-10 shadow-xl opacity bg-white flex items-center justify-between px-6 py-4 sticky top-0">
+            <!-- Left Section: Heart Icon and HealthCheck Text -->
+            <div>
+            <a href="index.html"><div class="flex items-center">
+                <svg class="lg:w-8 lg:h-8 mb-2 w-6 h-6 text-red-500 mr-2 inline" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span class="lg:text-3xl text-xl font-bold ">HealthCheck</span>
+            </a>
+            </div>
+        </div>
+    
+            <!-- Middle Section: Nav Links
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="p-2 rounded-lg m-2 font-medium text-lg lg:text-xl hover:text-black hover:bg-gray-200 ">Assessment</a>
+                <a href="#" class="lg:text-xl hover:text-black rounded-lg p-2 m-2 font-medium text-lg hover:bg-gray-200">Contact</a>
+                <a href="#" class="lg:text-xl hover:text-black rounded-xl p-2 m-2 font-medium text-lg hover:bg-gray-200 ">About</a>
+            </div> -->
+    
+            <!-- Right Section: Start Assessment Button -->
+            <div>
+                <a href="ThankYou.htm" class="bg-blue-600 text-white py-2 px-4 rounded font-medium text-xl lg:text-xl pr-6 pl-6 hover:bg-white hover:text-black">Quit</a>
+            </div>
+        </nav>
+    
+    </div>
+    
+
+    <!-- Main Container -->
+    <div class="container mx-auto py-12">
+        <!-- Progress Bar -->
+        <div class="w-full bg-white shadow-lg h-2 rounded-full mb-4">
+            <div id="progress-bar" class="bg-blue-500 h-2 rounded-full" style="width: 14%;"></div>
+        </div>
+
+        <!-- Counter -->
+        <div class="text-right mb-4">
+            <span id="step-counter" class="font-semibold text-lg">Step 1 of 7</span>
+        </div>
+
+        <!-- Form Container -->
+        <div id="form-container" class="bg-white p-8 rounded-lg shadow-lg">
+            <!-- Form Pages -->
+            <!-- Page 1 -->
+            <div id="page-1" class="form-page show">
+                <p class="text-2xl font-bold mb-4">What is your favorite color?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question1" value="red" class="mr-2"> Red</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question1" value="blue" class="mr-2"> Blue</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question1" value="green" class="mr-2"> Green</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question1" value="yellow" class="mr-2"> Yellow</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question1" value="black" class="mr-2"> Black</li>
+                </ul class="mb-20">
+            </div>
+
+            <!-- Page 2 -->
+            <div id="page-2" class="form-page hidden">
+                
+                <p class="text-2xl font-bold mb-4">What is your preferred mode of transport?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question2" value="car" class="mr-2"> Car</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question2" value="bike" class="mr-2"> Bike</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question2" value="bus" class="mr-2"> Bus</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question2" value="train" class="mr-2"> Train</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question2" value="walk" class="mr-2"> Walk</li>
+                </ul>
+            </div>
+
+            <!-- Page 3 -->
+            <div id="page-3" class="form-page hidden">
+                
+                <p class="text-2xl font-bold mb-4">Which cuisine do you prefer?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question3" value="italian" class="mr-2"> Italian</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question3" value="mexican" class="mr-2"> Mexican</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question3" value="indian" class="mr-2"> Indian</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question3" value="chinese" class="mr-2"> Chinese</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question3" value="japanese" class="mr-2"> Japanese</li>
+                </ul>
+            </div>
+
+            <!-- Page 4 -->
+            <div id="page-4" class="form-page hidden">
+               
+                <p class="text-2xl font-bold mb-4">What is your favorite hobby?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question4" value="reading" class="mr-2"> Reading</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question4" value="traveling" class="mr-2"> Traveling</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question4" value="gaming" class="mr-2"> Gaming</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question4" value="sports" class="mr-2"> Sports</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question4" value="cooking" class="mr-2"> Cooking</li>
+                </ul>
+            </div>
+
+            <!-- Page 5 -->
+            <div id="page-5" class="form-page hidden">
+                
+                <p class="text-2xl font-bold mb-4">Which season do you prefer?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question5" value="spring" class="mr-2"> Spring</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question5" value="summer" class="mr-2"> Summer</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question5" value="autumn" class="mr-2"> Autumn</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question5" value="winter" class="mr-2"> Winter</li>
+                </ul>
+            </div>
+
+            <!-- Page 6 -->
+            <div id="page-6" class="form-page hidden">
+                
+                <p class="text-2xl font-bold mb-4">What type of movies do you like?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question6" value="action" class="mr-2"> Action</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question6" value="comedy" class="mr-2"> Comedy</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question6" value="drama" class="mr-2"> Drama</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question6" value="horror" class="mr-2"> Horror</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question6" value="sci-fi" class="mr-2"> Sci-Fi</li>
+                </ul>
+            </div>
+
+            <!-- Page 7 -->
+            <div id="page-7" class="form-page hidden">
+                
+                <p class="text-2xl font-bold mb-4">What is your favorite type of music?</p>
+                <ul class="space-y-2">
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question7" value="rock" class="mr-2"> Rock</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question7" value="pop" class="mr-2"> Pop</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question7" value="jazz" class="mr-2"> Jazz</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question7" value="classical" class="mr-2"> Classical</li>
+                    <li class="text-lg font-semibold block shadow-sm rounded-lg p-4"><input type="radio" name="question7" value="hip-hop" class="mr-2"> Hip-Hop</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="mt-6 flex justify-between">
+            <button id="prev-btn" class="bg-gray-700 text-white py-2 px-4 rounded" onclick="prevPage()" disabled>Previous</button>
+            <button id="next-btn" class="bg-red-500 text-white py-2 px-4 rounded" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Page Navigation and Progress Bar -->
+    <script>
+        let currentPage = 1;
+        const totalPages = 7;
+
+        function showPage(page) {
+            for (let i = 1; i <= totalPages; i++) {
+                document.getElementById(`page-${i}`).classList.add('hidden');
+            }
+            document.getElementById(`page-${page}`).classList.remove('hidden');
+            document.getElementById('step-counter').innerText = `Step ${page} of ${totalPages}`;
+            document.getElementById('progress-bar').style.width = `${(page / totalPages) * 100}%`;
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+            document.getElementById('prev-btn').disabled = currentPage === 1;
+            document.getElementById('next-btn').innerText = currentPage === totalPages ? 'Submit' : 'Next';
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+            document.getElementById('prev-btn').disabled = currentPage === 1;
+            document.getElementById('next-btn').innerText = 'Next';
+        }
+
+        // Initialize first page
+        showPage(currentPage);
+    </script>
+
+</body>
+</html>
