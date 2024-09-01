@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCheck Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" text-black">
+
+    <!-- Navbar -->
+    <nav class="z-10 shadow-xl opacity bg-white flex items-center justify-between px-6 py-4 sticky top-0">
+        <!-- Left Section: Heart Icon and HealthCheck Text -->
+        
+        <div class="flex items-center">
+        <a href="index.html">
+            <svg class="inline mb-2 lg:w-8 lg:h-8 w-6 h-6 text-red-500 mr-2" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="lg:text-3xl text-xl font-bold lg:mt-2">HealthCheck</span></a>
+        </div>
+
+        <!-- Middle Section: Nav Links -->
+        <div class="hidden md:flex space-x-8">
+            <a href="#" class="p-2 rounded-lg m-2 font-medium text-lg lg:text-xl hover:text-black hover:bg-gray-200 ">Assessment</a>
+            <a href="#" class="lg:text-xl hover:text-black rounded-lg p-2 m-2 font-medium text-lg hover:bg-gray-200">Contact</a>
+            <a href="#" class="lg:text-xl hover:text-black rounded-xl p-2 m-2 font-medium text-lg hover:bg-gray-200 ">About</a>
+        </div>
+
+        <!-- Right Section: Start Assessment Button -->
+        <div>
+            <a href="form.htm" class="bg-black text-white py-2 px-4 rounded font-medium text-lg lg:text-xl  hover:bg-white hover:text-black">Start Assessment</a>
+        </div>
+    </nav>
+
+
+<!-- Hero Section -->
+<section style="z-index: -1;" class="relative bg-center flex h-screen">
+    <div class="absolute inset-0 bg-black opacity-10"></div> <!-- Overlay for better text visibility -->
+    <div class="container mx-auto h-full flex items-center justify-start relative z-10">
+        <div class="text-left p-8">
+            <h1 class="text-8xl  font-bold mb-4">Predict Your <br>Health Risks!</h1>
+            <p class="ml-0 m-4 pl-0 p-4 text-2xl">Take our assessments to understand your risk of breast cancer, heart attack, and diabetes.</p>
+            <a href="#assessments"><button class="bg-black text-white py-3 px-6 rounded-xl text-2xl hover:bg-gray-800 size-44">Start Assessment</a></button>
+        </div>
+    </div>
+    <div class="w-1/2 h-full mt-29 sm:mt-36">
+        <img src="Medical Report2.png" class="bg-cover mt-12" alt="Health Image" class="w-full h-full object-cover sm:size-5">
+    </div>
+</section>
+<section class="py-12" id="assessments">
+    <div class="container mx-auto">
+        <div id="assessments" class="flex sm:flex-col lg:flex-row justify-around ">
+            <!-- Card 1 -->
+            <div class="flex flex-col justify-center lg:h-96 m-2 text-center p-6 rounded-lg sm:h-56 shadow-lg transform transition-transform hover:scale-105 w-33%">
+                <svg class=" w-12 h-12 mx-auto lg:mb-5 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4">Breast Cancer</h2>
+                <p class="text-gray-400 lg:mb-8 font-semibold">Assess your risk of developing breast cancer.</p>
+                <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Breat.htm">Assess Risk</a></button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class=" m-2  text-center p-6 rounded-lg shadow-lg transform transition-transform flex flex-col justify-center lg:h-96 hover:scale-105 sm:h-56 w-33%">
+                <svg class="w-12 h-12 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4">Heart Attack</h2>
+                <p class="lg:mb-8  font-semibold text-gray-400 ">Understand your risk of experiencing a heart attack.</p>
+                <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Heart.htm">Assess Risk</a></button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="\ m-2 text-center p-6 rounded-lg shadow-lg flex flex-col justify-center lg:h-96 transform transition-transform ease-in hover:scale-105 sm:h-56 w-33%">
+                <svg class="w-12 h-12 mx-auto text mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-4">Diabetes</h2>
+                <p class= "lg:mb-8  text-gray-400 font-semibold text-lg">Evaluate your risk of developing diabetes.</p>
+                <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Diabetes.htm">Assess Risk</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mx-auto flex justify-center">
+<h1 class="text-6xl mb-6 font-bold inline">Take the Test Now!</h1>
+</div>
+
+<footer class="bg-gray-300 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <!-- Social Media Icons -->
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="text-black hover:text-white">
+                <!-- Example SVG icon for social media -->
+                <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.54 6.42a8.18 8.18 0 0 1-2.36.65 4.12 4.12 0 0 0 1.81-2.27 8.26 8.26 0 0 1-2.61.99 4.11 4.11 0 0 0-7 3.74A11.66 11.66 0 0 1 1.64 4.15a4.1 4.1 0 0 0 1.27 5.49 4.09 4.09 0 0 1-1.86-.52v.05a4.1 4.1 0 0 0 3.29 4.01 4.13 4.13 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 .96 18a11.66 11.66 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.54A8.36 8.36 0 0 0 22.54 6.42z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-black  hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+            </a>
+            <a href="#" class="text-black  hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-instagram  w-9 h-9 pl-2" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="mb-4">
+            <a href="#" class="text-black font-semibold text-lg hover:text-white mx-4">Privacy Policy</a>
+            <a href="#" class="text-black font-semibold text-lg hover:text-white mx-4">Terms of Service</a>
+            <a href="#" class="text-black font-semibold text-lg  hover:text-white mx-4">Support</a>
+            <a href="#" class="font-semibold text-lg text-black hover:text-white mx-4">Contact Us</a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+            <p class="text-black text-lg">&copy; 2024 HealthCheck. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
