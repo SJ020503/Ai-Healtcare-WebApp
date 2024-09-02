@@ -3,13 +3,14 @@ import joblib
 import numpy as np
 import os
 from sklearn.preprocessing import StandardScaler
+from flask_cors import CORS
 # Load models
 def load_model(model_path):
     return joblib.load(model_path)
 
 # Flask app initialization
 app = Flask(__name__)
-
+CORS(app)
 # Load models when the app starts
 diabetes_model = load_model(os.path.join('../ai', 'diabetes_model.pkl'))
 breast_cancer_model = load_model(os.path.join('../ai', 'breast_model.pkl'))
