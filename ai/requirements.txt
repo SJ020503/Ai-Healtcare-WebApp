@@ -4,3 +4,4 @@ numpy==1.22.4         # Compatible with scikit-learn 1.0.2
 pandas                # If you're using pandas, don't specify version unless necess
 gunicorn
 Werkzeug==2.2.3
+flask_cors
