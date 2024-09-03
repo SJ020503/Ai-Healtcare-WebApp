@@ -40,8 +40,8 @@ def predictive_system_heart(age, sex, cp, trestbps, chol, fbs, restecg, thalach,
         return "Have a Heart Disease"
 
 # Define the predictive system function for breast cancer
-def predictive_system_breast(a, b, c, d, e, f, g, h, i, j, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1):
-    input_data = (a, b, c, d, e, f, g, h, i, j, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1)
+def predictive_system_breast(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1):
+    input_data = (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, a1, b1, c1, d1)
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
     
@@ -73,7 +73,7 @@ def predict_breast_cancer():
     data = request.json
     result = predictive_system_breast(
         a=data['a'], b=data['b'], c=data['c'], d=data['d'], e=data['e'], f=data['f'],
-        g=data['g'], h=data['h'], i=data['i'], j=data['j'], l=data['l'], m=data['m'],
+        g=data['g'], h=data['h'], i=data['i'], j=data['j'], k=data['k'],l=data['l'], m=data['m'],
         n=data['n'], o=data['o'], p=data['p'], q=data['q'], r=data['r'], s=data['s'],
         t=data['t'], u=data['u'], v=data['v'], w=data['w'], x=data['x'], y=data['y'],
         z=data['z'], a1=data['a1'], b1=data['b1'], c1=data['c1'], d1=data['d1']
