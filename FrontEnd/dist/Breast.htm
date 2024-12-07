@@ -9,8 +9,17 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body class="text-black">
+  <body class="text-black" >
+
+    <!-- <div class="dialog-overlay" id="dialogOverlay">
+      <div class="dialog-box">
+          <h1 id="dialogMessage" class="text-5xl font-bold "></h1>
+          <button class="m-4 mt-7 bg-blue-400 text-white text-lg font-semibold rounded-md p-4"><a href="Breast.htm">Take another Test</a></button>
+      </div> -->
+  </div>
+    <div class="body"> 
     <nav
       class="h-24 z-10 shadow-xl opacity bg-white flex items-center justify-between px-6 py-4 sticky top-0"
     >
@@ -62,8 +71,9 @@
               type="number"
               id="question1"
               name="question1"
-              class="w-1/3 p-2 bg- text-white border border-gray-600 rounded-lg"
+              class="w-1/3 p-2 bg- text-black border border-gray-600 rounded-lg"
               required
+              min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -74,8 +84,8 @@
               type="number"
               id="question2"
               name="question2"
-              class="w-1/3 p-2 bg- text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 bg- text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -86,8 +96,8 @@
               type="number"
               id="question3"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -98,8 +108,8 @@
               type="number"
               id="question4"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -110,8 +120,8 @@
               type="number"
               id="question5"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -122,8 +132,8 @@
               type="number"
               id="question6"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -134,8 +144,8 @@
               type="number"
               id="question7"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -146,8 +156,8 @@
               type="number"
               id="question8"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -158,8 +168,8 @@
               type="number"
               id="question9"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -170,8 +180,8 @@
               type="number"
               id="question10"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -182,8 +192,8 @@
               type="number"
               id="question11"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -194,8 +204,8 @@
               type="number"
               id="question12"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -206,8 +216,8 @@
               type="number"
               id="question13"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -218,8 +228,8 @@
               type="number"
               id="question14"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -230,8 +240,8 @@
               type="number"
               id="question15"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -242,8 +252,8 @@
               type="number"
               id="question16"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -254,8 +264,8 @@
               type="number"
               id="question17"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -266,8 +276,8 @@
               type="number"
               id="question18"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -278,8 +288,8 @@
               type="number"
               id="question19"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -290,8 +300,8 @@
               type="number"
               id="question20"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -302,8 +312,8 @@
               type="number"
               id="question21"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -314,8 +324,8 @@
               type="number"
               id="question22"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -326,8 +336,8 @@
               type="number"
               id="question23"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -338,8 +348,8 @@
               type="number"
               id="question24"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -350,8 +360,8 @@
               type="number"
               id="question25"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -362,8 +372,8 @@
               type="number"
               id="question26"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -374,8 +384,8 @@
               type="number"
               id="question27"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -386,8 +396,8 @@
               type="number"
               id="question28"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -398,8 +408,8 @@
               type="number"
               id="question29"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
           <div class="flex items-center">
@@ -410,8 +420,8 @@
               type="number"
               id="question30"
               name="question2"
-              class="w-1/3 p-2 text-white border border-gray-600 rounded-lg"
-              required
+              class="w-1/3 p-2 text-black border border-gray-600 rounded-lg"
+              required min="0" max="1000" step="0.01"
             />
           </div>
         </div>
@@ -428,73 +438,7 @@
       </form>
     </div>
 
-    <script>
-      document.getElementById("submitbtn").addEventListener("click", () => {
-        event.preventDefault();
-        predictDiabetes();
-      });
-      const predictDiabetes = async () => {
-        // Define the input payload according to your specification
-        const inputPayload = {
-          a: Number(document.getElementById("question1").value),
-          b: Number(document.getElementById("question2").value),
-          c: Number(document.getElementById("question3").value),
-          d: Number(document.getElementById("question4").value),
-          e: Number(document.getElementById("question5").value),
-          f: Number(document.getElementById("question6").value),
-          g: Number(document.getElementById("question7").value),
-          h: Number(document.getElementById("question8").value),
-          i: Number(document.getElementById("question9").value),
-          j: Number(document.getElementById("question10").value),
-          k: Number(document.getElementById("question11").value),
-          l: Number(document.getElementById("question12").value),
-          m: Number(document.getElementById("question13").value),
-          n: Number(document.getElementById("question14").value),
-          o: Number(document.getElementById("question15").value),
-          p: Number(document.getElementById("question16").value),
-          q: Number(document.getElementById("question17").value),
-          r: Number(document.getElementById("question18").value),
-          s: Number(document.getElementById("question19").value),
-          t: Number(document.getElementById("question20").value),
-          u: Number(document.getElementById("question21").value),
-          v: Number(document.getElementById("question22").value),
-          w: Number(document.getElementById("question23").value),
-          x: Number(document.getElementById("question24").value),
-          y: Number(document.getElementById("question25").value),
-          z: Number(document.getElementById("question26").value),
-          a1: Number(document.getElementById("question27").value),
-          b1: Number(document.getElementById("question28").value),
-          c1: Number(document.getElementById("question29").value),
-          d1: Number(document.getElementById("question30").value),
-        };
-
-        console.log(inputPayload);
-        try {
-          // Make the API call using fetch
-          const response = await fetch(
-            "https://ai-healthcare-webapp.onrender.com/predict/breastcancer",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(inputPayload),
-            }
-          );
-
-          // Check if the response is ok
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-
-          // Parse the JSON response
-          const data = await response.json();
-          console.log("Prediction Response:", data);
-        } catch (error) {
-          // Handle any errors that occur during the fetch
-          console.error("Error making the API call:", error);
-        }
-      };
-    </script>
+  </div>
   </body>
+  <script src="breast.js"></script>
 </html>
