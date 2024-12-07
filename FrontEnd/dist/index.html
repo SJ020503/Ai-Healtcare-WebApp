@@ -29,7 +29,10 @@
 
         <!-- Right Section: Start Assessment Button -->
         <div>
-            <a href="form.htm" class="bg-black text-white py-2 px-4 rounded font-medium text-lg lg:text-xl  hover:bg-white hover:text-black">Start Assessment</a>
+            <button onclick="document.getElementById('assessments').scrollIntoView({ behavior: 'smooth' })" class="bg-black text-white py-2 px-4 rounded hover:bg-white hover:text-black">
+            <a href="#" class="bg-black text-white py-2 px-4 rounded font-medium text-lg lg:text-xl sm:text-base xs:text-sm sm:py-1 sm:px-2 hover:bg-white hover:text-black">Start Assessment</a>
+        </button>
+
         </div>
     </nav>
 
@@ -41,7 +44,7 @@
         <div class="text-left p-8">
             <h1 class="text-8xl  font-bold mb-4">Predict Your <br>Health Risks!</h1>
             <p class="ml-0 m-4 pl-0 p-4 text-2xl">Take our assessments to understand your risk of breast cancer, heart attack, and diabetes.</p>
-            <a href="#assessments"><button class="bg-black text-white py-3 px-6 rounded-xl text-2xl hover:bg-gray-800 size-44">Start Assessment</a></button>
+            <a href="assessments"><button class="bg-black text-white py-3 px-6 rounded-xl text-2xl hover:bg-gray-800 size-44">Start Assessment</button></a>
         </div>
     </div>
     <div class="w-1/2 h-full mt-29 sm:mt-36">
@@ -50,20 +53,26 @@
 </section>
 <section class="py-12" id="assessments">
     <div class="container mx-auto">
-        <div id="assessments" class="flex sm:flex-col lg:flex-row justify-around ">
+        <div id="assessments" class="flex flex-col lg:flex-row justify-around">
+
             <!-- Card 1 -->
             <div class="flex flex-col justify-center lg:h-96 m-2 text-center p-6 rounded-lg sm:h-56 shadow-lg transform transition-transform hover:scale-105 w-33%">
-                <svg class=" w-12 h-12 mx-auto lg:mb-5 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <!-- <svg class=" w-12 h-12 mx-auto lg:mb-5 mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"> -->
+                    <svg class=" w-12 h-12 mx-auto lg:mb-5 mb-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-radioactive" viewBox="0 0 16 16">
+                        <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"/>
+                        <path d="M9.653 5.496A3 3 0 0 0 8 5c-.61 0-1.179.183-1.653.496L4.694 2.992A5.97 5.97 0 0 1 8 2c1.222 0 2.358.365 3.306.992zm1.342 2.324a3 3 0 0 1-.884 2.312 3 3 0 0 1-.769.552l1.342 2.683c.57-.286 1.09-.66 1.538-1.103a6 6 0 0 0 1.767-4.624zm-5.679 5.548 1.342-2.684A3 3 0 0 1 5.005 7.82l-2.994-.18a6 6 0 0 0 3.306 5.728ZM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                      </svg>
+
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 <h2 class="text-2xl lg:text-3xl font-bold mb-4">Breast Cancer</h2>
                 <p class="text-gray-400 lg:mb-8 font-semibold">Assess your risk of developing breast cancer.</p>
-                <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Breat.htm">Assess Risk</a></button>
+                <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Breast.htm">Assess Risk</a></button>
             </div>
 
             <!-- Card 2 -->
             <div class=" m-2  text-center p-6 rounded-lg shadow-lg transform transition-transform flex flex-col justify-center lg:h-96 hover:scale-105 sm:h-56 w-33%">
-                <svg class="w-12 h-12 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-12 mt-10 h-12 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
                 <h2 class="text-2xl lg:text-3xl font-bold mb-4">Heart Attack</h2>
@@ -73,9 +82,10 @@
 
             <!-- Card 3 -->
             <div class="\ m-2 text-center p-6 rounded-lg shadow-lg flex flex-col justify-center lg:h-96 transform transition-transform ease-in hover:scale-105 sm:h-56 w-33%">
-                <svg class="w-12 h-12 mx-auto text mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" w-12 h-12 mx-auto lg:mb-5 mb-4" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M441 7l32 32 32 32c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15L417.9 128l55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-72-72L295 73c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l55 55L422.1 56 407 41c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0zM210.3 155.7l61.1-61.1c.3 .3 .6 .7 1 1l16 16 56 56 56 56 16 16c.3 .3 .6 .6 1 1l-191 191c-10.5 10.5-24.7 16.4-39.6 16.4l-88.8 0L41 505c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57 0-88.8c0-14.9 5.9-29.1 16.4-39.6l43.3-43.3 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57 41.4-41.4 57 57c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6l-57-57z"/></svg>
+                <!-- <svg class="w-12 h-12 mx-auto text mb-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
+                </svg> -->
                 <h2 class="text-2xl lg:text-3xl font-bold mb-4">Diabetes</h2>
                 <p class= "lg:mb-8  text-gray-400 font-semibold text-lg">Evaluate your risk of developing diabetes.</p>
                 <button class="text-xl pt-3 pb-3 pr-4 pl-4 font-normal rounded-lg m-auto mt-2 bg-black p-1 text-white"><a href="Diabetes.htm">Assess Risk</a></button>
